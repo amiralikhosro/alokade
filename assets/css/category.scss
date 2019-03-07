@@ -1,0 +1,481 @@
+.category{
+  .topSearch{
+    background-image: url("/assets/images/slider/1.jpg");
+    background-color: #aa2833;
+    background-blend-mode: overlay;
+    height: 300px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    .searchbar{
+      height: 75px;
+      .searchbar--input{
+        border-right: 1px solid #939393!important;
+
+      }
+      .searchBar--select{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        transition: 0.6s;
+      }
+      .searchbar--submit{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+  .btn-filter-show{
+    display: none;
+  }
+  .filter-box{
+    height: 300px;
+    .select-filter{
+      box-shadow: 0px 3px 7px 0px #0000009e;
+    }
+  }
+  input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0em;
+    padding-bottom: 1.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+
+  input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+  }
+
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+  .price-slider{
+    /* Ion.RangeSlider
+// css version 2.0.3
+// Â© 2013-2014 Denis Ineshin | IonDen.com
+// ===================================================================================================================*/
+
+    /* =====================================================================================================================
+    // RangeSlider */
+
+    .irs {
+      position: relative; display: block;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .irs-line {
+      position: relative; display: block;
+      overflow: hidden;
+      outline: none !important;
+    }
+    .irs-line-left, .irs-line-mid, .irs-line-right {
+      position: absolute; display: block;
+      top: 0;
+    }
+    .irs-line-left {
+      left: 0; width: 11%;
+    }
+    .irs-line-mid {
+      left: 9%; width: 82%;
+    }
+    .irs-line-right {
+      right: 0; width: 11%;
+    }
+
+    .irs-bar {
+      position: absolute; display: block;
+      left: 0; width: 0;
+    }
+    .irs-bar-edge {
+      position: absolute; display: block;
+      top: 0; left: 0;
+    }
+
+    .irs-shadow {
+      position: absolute; display: none;
+      left: 0; width: 0;
+    }
+
+    .irs-slider {
+      position: absolute; display: block;
+      cursor: default;
+      z-index: 1;
+    }
+    .irs-slider.single {
+
+    }
+    .irs-slider.from {
+
+    }
+    .irs-slider.to {
+
+    }
+    .irs-slider.type_last {
+      z-index: 2;
+    }
+
+    .irs-min {
+      position: absolute; display: block;
+      left: 0;
+      cursor: default;
+    }
+    .irs-max {
+      position: absolute; display: block;
+      right: 0;
+      cursor: default;
+    }
+
+    .irs-from, .irs-to, .irs-single {
+      position: absolute; display: block;
+      top: 0; left: 0;
+      cursor: default;
+      white-space: nowrap;
+    }
+
+    .irs-grid {
+      position: absolute; display: none;
+      bottom: 0; left: 0;
+      width: 100%; height: 20px;
+    }
+    .irs-with-grid .irs-grid {
+      display: block;
+    }
+    .irs-grid-pol {
+      position: absolute;
+      top: 0; left: 0;
+      width: 1px; height: 8px;
+      background: #000;
+    }
+    .irs-grid-pol.small {
+      height: 4px;
+    }
+    .irs-grid-text {
+      position: absolute;
+      bottom: 0; left: 0;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 9px; line-height: 9px;
+      padding: 0 3px;
+      color: #000;
+    }
+
+    .irs-disable-mask {
+      position: absolute; display: block;
+      top: 0; left: -1%;
+      width: 102%; height: 100%;
+      cursor: default;
+      background: rgba(0,0,0,0.0);
+      z-index: 2;
+    }
+    .lt-ie9 .irs-disable-mask {
+      background: #000;
+      filter: alpha(opacity=0);
+      cursor: not-allowed;
+    }
+
+    .irs-disabled {
+      opacity: 0.4;
+    }
+
+
+    .irs-hidden-input {
+      position: absolute !important;
+      display: block !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 0 !important;
+      height: 0 !important;
+      font-size: 0 !important;
+      line-height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      outline: none !important;
+      z-index: -9999 !important;
+      background: none !important;
+      border-style: solid !important;
+      border-color: transparent !important;
+    }
+
+
+    /* Ion.RangeSlider, Simple Skin
+    // css version 2.0.3
+    // Â© Denis Ineshin, 2014    https://github.com/IonDen
+    // Â© guybowden, 2014        https://github.com/guybowden
+    // ===================================================================================================================*/
+
+    /* =====================================================================================================================
+    // Skin details */
+
+    .irs {
+      height: 25px;
+    }
+    .irs-with-grid {
+      height: 75px;
+    }
+    .irs-line {
+      height: 10px; top: 33px;
+      background: #EEE;
+      background: linear-gradient(to bottom, #DDD -50%, #FFF 150%); /* W3C */
+      border-radius: 16px;
+      -moz-border-radius: 16px;
+    }
+    .irs-line-left {
+      height: 8px;
+    }
+    .irs-line-mid {
+      height: 8px;
+    }
+    .irs-line-right {
+      height: 8px;
+    }
+
+    .irs-bar {
+      height: 10px; top: 33px;
+      border-top: 1px solid #bc3939;
+      border-bottom: 1px solid #bc3939;
+      background: #bc3939;
+      background: linear-gradient(to top, #bc3939 0%,#bc3939); /* W3C */
+    }
+    .irs-bar-edge {
+      height: 10px; top: 33px;
+      width: 14px;
+      border: 1px solid #428bca;
+      border-right: 0;
+      background: #bc3939;
+      background: linear-gradient(to top, #bc3939 0%,#bc3939 100%); /* W3C */
+      border-radius: 16px 0 0 16px;
+      -moz-border-radius: 16px 0 0 16px;
+    }
+
+    .irs-shadow {
+      height: 2px; top: 38px;
+      background: #000;
+      opacity: 0.3;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+    }
+    .lt-ie9 .irs-shadow {
+      filter: alpha(opacity=30);
+    }
+
+    .irs-slider {
+      top: 25px;
+      width: 27px; height: 27px;
+      border: 1px solid #AAA;
+      background: #DDD;
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 20%,rgba(255,255,255,1) 100%); /* W3C */
+      border-radius: 27px;
+      -moz-border-radius: 27px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+
+    .irs-slider.state_hover, .irs-slider:hover {
+      background: #FFF;
+    }
+
+    .irs-min, .irs-max {
+      color: #333;
+      font-size: 12px; line-height: 1.333;
+      text-shadow: none;
+      top: 0;
+      padding: 1px 5px;
+      background: rgba(0,0,0,0.1);
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+
+    .lt-ie9 .irs-min, .lt-ie9 .irs-max {
+      background: #ccc;
+    }
+
+    .irs-from, .irs-to, .irs-single {
+      color: #fff;
+      font-size: 14px; line-height: 1.333;
+      text-shadow: none;
+      padding: 1px 5px;
+      background: #bc3939;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+    }
+    .lt-ie9 .irs-from, .lt-ie9 .irs-to, .lt-ie9 .irs-single {
+      background: #999;
+    }
+
+    .irs-grid {
+      height: 27px;
+    }
+    .irs-grid-pol {
+      opacity: 0.5;
+      background: #bc3939;
+    }
+    .irs-grid-pol.small {
+      background: #999;
+    }
+
+    .irs-grid-text {
+      bottom: 5px;
+      color: #99a4ac;
+    }
+
+    .irs-disabled {
+    }
+  }
+
+  .img-category{
+    height: 230px;
+  }
+  #pag-ination
+  {
+    .arr-cover
+    {
+      width: 1px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .arrow
+    {
+      i
+      {
+        display: block;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    #pg-links
+    {
+      display: table;
+      width: 100%;
+      .td
+      {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    #links
+    {
+
+    }
+    .pg-link
+    {
+      transition: 0.2s ease background-color, 0.3s ease color;
+      span
+      {
+        position: relative;
+        z-index: 2;
+      }
+      &:hover
+      {
+        background-color: #d92121;
+        color: white;
+      }
+    }
+  }
+  .border-rounded-right-0{
+    border-bottom-right-radius:0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .category {
+    .topSearch{
+      height: 250px!important;
+      .searchbar{
+        height: 55px!important;
+      }
+    }
+    figure{
+      .img-category{
+        height: 200px!important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .bannerOffer {
+    h3 {
+      font-size: 1.3em !important;
+    }
+  }
+  .btn-filter-show{
+    right: 0;
+    display: block!important;
+    border-top-left-radius: 37PX;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 8px;
+  }
+  .category .topSearch{
+    height: 220px!important;
+    .searchbar{
+      height: 45px!important;
+    }
+  }
+  .filter-box{
+    z-index: 1;
+    position: absolute;
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bannerOffer {
+    h3 {
+      font-size: 1.1em !important;
+    }
+  }
+  .category{
+    .topSearch{
+      height: 200px!important;
+      font-size: 13px;
+      .searchbar{
+        height: 35px!important;
+      }
+    }
+    figure{
+      .img-category{
+        height: 140px!important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 456px){
+  .bannerOffer {
+    h3 {
+      font-size: 0.9em !important;
+    }
+  }
+}

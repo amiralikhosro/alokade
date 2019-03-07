@@ -1,0 +1,44 @@
+.footer{
+  background-color:#f8f8f8;
+  span{
+    font-size: 1em;
+  }
+  li{
+    font-size: 0.9em;
+  }
+  .addresTell{
+    span{
+      display: block;
+    }
+  }
+  .emailFooter{
+    border: none;
+  }
+  .imgEmail{
+    top: 0;
+    left: 0;
+    background-color: #009764;
+    img{
+      min-width: 17px;
+      transform: rotate(326deg);
+      bottom: 3px;
+      max-width: 26px;
+    }
+  }
+  .socialNetworkImg{
+    min-width: 30px;
+  }
+  @media screen and (max-width: 992px) {
+    span{
+      font-size: 0.8em;
+    }
+    .socialNetworkImg{
+      max-width: 26px!important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    span{
+      font-size: 0.8em;
+    }
+  }
+}

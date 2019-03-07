@@ -1,0 +1,31 @@
+.footer {
+  background-color: #f8f8f8; }
+  .footer span {
+    font-size: 1em; }
+  .footer li {
+    font-size: 0.9em; }
+  .footer .addresTell span {
+    display: block; }
+  .footer .emailFooter {
+    border: none; }
+  .footer .imgEmail {
+    top: 0;
+    left: 0;
+    background-color: #009764; }
+    .footer .imgEmail img {
+      min-width: 17px;
+      transform: rotate(326deg);
+      bottom: 3px;
+      max-width: 26px; }
+  .footer .socialNetworkImg {
+    min-width: 30px; }
+  @media screen and (max-width: 992px) {
+    .footer span {
+      font-size: 0.8em; }
+    .footer .socialNetworkImg {
+      max-width: 26px !important; } }
+  @media screen and (max-width: 768px) {
+    .footer span {
+      font-size: 0.8em; } }
+
+/*# sourceMappingURL=footer.css.map */

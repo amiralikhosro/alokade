@@ -1,0 +1,173 @@
+.home{
+  .item{
+    cursor: pointer;
+  }
+  $colorRed:#a7072d;
+  .sliderFirst{
+    .item{
+      figure{
+        height: 500px;
+        margin: 0;
+      }
+    }
+    .owl-dots{
+      position: absolute;
+      bottom: 13px;
+      right: 50%;
+      left: 50%;
+      transform: rotate(90deg);
+    }
+    .custom-owl-next-FullWidthSlider{
+      left: 0!important;
+    }
+    .custom-owl-prev-FullWidthSlider{
+      right: 0!important;
+    }
+    .angleForslider{
+      bottom: 200px;
+      height: 50px;
+      width: 50px;
+      background: white;
+      border-radius: 50px;
+      .fa-angle-left ,.fa-angle-right{
+        top: 17%;
+        font-size: 31px;
+      }
+      .fa-angle-right{
+        right: 30%;
+      }
+      .fa-angle-left{
+        left: 30%;
+      }
+    }
+  }
+  .otherSliderOnHomePage {
+    .otherSliderOnHomePageSliderImg {
+      height: 200px;
+    }
+    .custom-owl-prev-packages, .custom-owl-next-packages{
+      bottom: 220px;
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      box-shadow: 1px 1px 16px #945858ba;
+      transition: 0.4s;
+      &:hover{
+        box-shadow: 1px 1px 16px rgba(192, 117, 117, 0.91);
+        background-color: $colorRed;
+        transform: rotate(360deg);
+        .fas{
+          &:before{
+            color: white;
+          }
+        }
+      }
+
+    }
+    .custom-owl-prev-packages{
+     right: -1%;
+    }
+    .custom-owl-next-packages{
+      left: -1%;
+    }
+    .fa-angle-right , .fa-angle-left{
+      top: 20%;
+      left: 30%;
+    }
+  }
+  .titlePackages{
+    z-index: 11;
+    top: -15px;
+  }
+  .box-shadow-products-img{
+    box-shadow: 1px 1px 20px #928a8a;
+  }
+  .UsefulArticles{
+    .custom-owl-prev-packages, .custom-owl-next-packages{
+      &:hover{
+        box-shadow: 1px 1px 16px rgba(192, 117, 117, 0.91);
+        background-color: #51d71c;
+        transform: rotate(360deg);
+        .fas{
+          color: #00a800;
+        }
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  h2{
+    font-size: 1.7em;
+  }
+  .sliderFirst{
+    .item {
+      figure {
+        height: 400px!important;
+      }
+    }
+  }
+  .bannerOffer{
+    h3{
+      font-size: 1.4em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .bannerOffer{
+    h3{
+      font-size: 1.3em!important;
+    }
+  }
+  .supportAndWarranty{
+    font-size: 1em;
+  }
+  .sliderFirst {
+    .item {
+      figure {
+        height: 340px!important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .bannerOffer{
+    h3{
+      font-size: 1.1em!important;
+    }
+  }
+  .sliderFirst{
+    .item {
+      figure {
+        height: 220px!important;
+      }
+    }
+    .angleForslider{
+      bottom: 120px!important;
+      height: 30px!important;
+      width: 30px!important;
+      .fa-angle-left , .fa-angle-right{
+        font-size: 22px !important;
+      }
+    }
+    .bannerOffer{
+      h3{
+        font-size: 1em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .bannerOffer{
+    h3{
+      font-size: 0.8em!important;
+    }
+  }
+  .sliderFirst{
+    .bannerOffer{
+      h3{
+        font-size: 0.8em;
+      }
+    }
+  }
+}

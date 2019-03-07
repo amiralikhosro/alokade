@@ -1,0 +1,102 @@
+.home .item {
+  cursor: pointer; }
+.home .sliderFirst .item figure {
+  height: 500px;
+  margin: 0; }
+.home .sliderFirst .owl-dots {
+  position: absolute;
+  bottom: 13px;
+  right: 50%;
+  left: 50%;
+  transform: rotate(90deg); }
+.home .sliderFirst .custom-owl-next-FullWidthSlider {
+  left: 0 !important; }
+.home .sliderFirst .custom-owl-prev-FullWidthSlider {
+  right: 0 !important; }
+.home .sliderFirst .angleForslider {
+  bottom: 200px;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border-radius: 50px; }
+  .home .sliderFirst .angleForslider .fa-angle-left, .home .sliderFirst .angleForslider .fa-angle-right {
+    top: 17%;
+    font-size: 31px; }
+  .home .sliderFirst .angleForslider .fa-angle-right {
+    right: 30%; }
+  .home .sliderFirst .angleForslider .fa-angle-left {
+    left: 30%; }
+.home .otherSliderOnHomePage .otherSliderOnHomePageSliderImg {
+  height: 200px; }
+.home .otherSliderOnHomePage .custom-owl-prev-packages, .home .otherSliderOnHomePage .custom-owl-next-packages {
+  bottom: 220px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  box-shadow: 1px 1px 16px #945858ba;
+  transition: 0.4s; }
+  .home .otherSliderOnHomePage .custom-owl-prev-packages:hover, .home .otherSliderOnHomePage .custom-owl-next-packages:hover {
+    box-shadow: 1px 1px 16px rgba(192, 117, 117, 0.91);
+    background-color: #a7072d;
+    transform: rotate(360deg); }
+    .home .otherSliderOnHomePage .custom-owl-prev-packages:hover .fas:before, .home .otherSliderOnHomePage .custom-owl-next-packages:hover .fas:before {
+      color: white; }
+.home .otherSliderOnHomePage .custom-owl-prev-packages {
+  right: -1%; }
+.home .otherSliderOnHomePage .custom-owl-next-packages {
+  left: -1%; }
+.home .otherSliderOnHomePage .fa-angle-right, .home .otherSliderOnHomePage .fa-angle-left {
+  top: 20%;
+  left: 30%; }
+.home .titlePackages {
+  z-index: 11;
+  top: -15px; }
+.home .box-shadow-products-img {
+  box-shadow: 1px 1px 20px #928a8a; }
+.home .UsefulArticles .custom-owl-prev-packages:hover, .home .UsefulArticles .custom-owl-next-packages:hover {
+  box-shadow: 1px 1px 16px rgba(192, 117, 117, 0.91);
+  background-color: #51d71c;
+  transform: rotate(360deg); }
+  .home .UsefulArticles .custom-owl-prev-packages:hover .fas, .home .UsefulArticles .custom-owl-next-packages:hover .fas {
+    color: #00a800; }
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 1.7em; }
+
+  .sliderFirst .item figure {
+    height: 400px !important; }
+
+  .bannerOffer h3 {
+    font-size: 1.4em; } }
+@media screen and (max-width: 768px) {
+  .bannerOffer h3 {
+    font-size: 1.3em !important; }
+
+  .supportAndWarranty {
+    font-size: 1em; }
+
+  .sliderFirst .item figure {
+    height: 340px !important; } }
+@media screen and (max-width: 576px) {
+  .bannerOffer h3 {
+    font-size: 1.1em !important; }
+
+  .sliderFirst .item figure {
+    height: 220px !important; }
+  .sliderFirst .angleForslider {
+    bottom: 120px !important;
+    height: 30px !important;
+    width: 30px !important; }
+    .sliderFirst .angleForslider .fa-angle-left, .sliderFirst .angleForslider .fa-angle-right {
+      font-size: 22px !important; }
+  .sliderFirst .bannerOffer h3 {
+    font-size: 1em; } }
+@media screen and (max-width: 400px) {
+  .bannerOffer h3 {
+    font-size: 0.8em !important; }
+
+  .sliderFirst .bannerOffer h3 {
+    font-size: 0.8em; } }
+
+/*# sourceMappingURL=home.css.map */
